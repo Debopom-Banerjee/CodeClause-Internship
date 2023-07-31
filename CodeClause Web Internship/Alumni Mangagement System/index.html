@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alumni Management System</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Alumni Management System</h1>
+      <div class="add-alumni">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="batch" placeholder="Batch" />
+        <input type="text" id="email" placeholder="Email" />
+        <button onclick="addAlumni()">Add</button>
+      </div>
+      <div class="search-filter">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by name or batch"
+        />
+        <button onclick="searchAlumni()">Search</button>
+      </div>
+      <table id="alumniTable">
+        <tr>
+          <th>Name</th>
+          <th>Batch</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
